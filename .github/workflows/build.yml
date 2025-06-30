@@ -95,7 +95,7 @@ jobs:
 
   vs6-server2022:
     name: Visual Studio 6
-    runs-on: [self-hosted, windows, x64]
+    runs-on: windows-2022
 
     steps:
       - name: Checkout repository
