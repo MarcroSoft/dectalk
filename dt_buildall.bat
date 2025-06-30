@@ -1,6 +1,6 @@
 call vcvars32.bat
 
-cd ../../src/dapi/src
+cd src/dapi/src
   nmake /f devdtk43.mak CFG="devdtk43 - Win32 Release"
   if %errorlevel% neq 0 exit /b %errorlevel%
   nmake /f devdtk43.mak CFG="devdtk43 - Win32 Release Spanish"
@@ -15,12 +15,12 @@ cd ../../src/dapi/src
   if %errorlevel% neq 0 exit /b %errorlevel%
 cd ../../..
 
-cd ../../src/dtalkml/src
+cd src/dtalkml/src
   nmake /f DTalkML.mak CFG="DTalkML - Win32 Release"
   if %errorlevel% neq 0 exit /b %errorlevel%
 cd ../../..
 
-cd ../../src/dapi/src
+cd src/dapi/src
   nmake /f dic.mak CFG="dic - Win32 Release"
   if %errorlevel% neq 0 exit /b %errorlevel%
   nmake /f dic.mak CFG="dic - Win32 Release Spanish"
@@ -35,7 +35,7 @@ cd ../../src/dapi/src
   if %errorlevel% neq 0 exit /b %errorlevel%
 cd ../../..
 
-cd ../../src/dapi/build/dtalkdic
+cd src/dapi/build/dtalkdic
   fr\Release\dic ..\..\src\dic\Dic_fr.txt fr\dtalk_fr.dic /t:win32
   if %errorlevel% neq 0 exit /b %errorlevel%
   gr\Release\dic ..\..\src\dic\Dic_gr.txt gr\dtalk_gr.dic /t:win32
@@ -50,17 +50,17 @@ cd ../../src/dapi/build/dtalkdic
   if %errorlevel% neq 0 exit /b %errorlevel%
 cd ../../../..
 
-cd ../../src/samples/speak
+cd src/samples/speak
   nmake /f speak.mak CFG="speak - Win32 Release"
   if %errorlevel% neq 0 exit /b %errorlevel%
 cd ../../..
 
-cd ../../src/samples/say
+cd src/samples/say
   nmake /f say.mak CFG="say - Win32 Release"
   if %errorlevel% neq 0 exit /b %errorlevel%
 cd ../../..
 
-cd ../../src/samples/windic
+cd src/samples/windic
   nmake /f windic.mak CFG="windic - Win32 Release"
   if %errorlevel% neq 0 exit /b %errorlevel%
 cd ../../..
